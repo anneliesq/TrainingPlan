@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MileActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="2">
+        <Button
+            android:id="@+id/MoreInfo"
+            android:text="Workout Information"
+            android:background="#B959A2AB"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            />
+        <Button
+            android:id="@+id/NewPlan"
+            android:text="New training Plan"
+            android:background="#B959A2AB"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            />
+        <!-- Week One: -->
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="#27B3B2B2"
+            android:text="Week One:"
+            android:textSize="18sp" />
+        <!-- Day One -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Monday" />
+            <CheckBox
+                android:id="@+id/DayOne"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="20 minute easy run and 3 builder strides" />
+
+        </TableRow>
+        <!-- Day Two -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Tuesday" />
+
+            <CheckBox
+                android:id="@+id/DayTwo"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="15 minute tempo, (5 minute rest), 3x150m strides (90 second rest)" />
+        </TableRow>
+        <!-- Day Three -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Wednesday"/>
+            <CheckBox
+                android:id="@+id/DayThree"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="20 minute easy run and 3 builder strides" />
+        </TableRow>
+        <!-- Day Four -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Thursday" />
+
+            <CheckBox
+                android:id="@+id/DayFour"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="1 mile tempo, (5 minute rest), 10x400m at 3k pace (3 minute rest)" />
+        </TableRow>
+        <!-- Day Five -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Friday" />
+            <CheckBox
+                android:id="@+id/DayFive"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="20 minute easy run or 30 minute cross-training" />
+        </TableRow>
+        <!-- Day Six -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Saturday" />
+            <CheckBox
+                android:id="@+id/DaySix"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="30 minute long run" />
+        </TableRow>
+        <!-- Day Seven -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Sunday" />
+            <CheckBox
+                android:id="@+id/DaySeven"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Off Day" />
+        </TableRow>
+        <!-- Week Two: -->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:background="#27B3B2B2"
+            android:text="Week Two:"
+            android:textSize="18sp" />
+        <!-- Day Eight -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Monday" />
+
+            <CheckBox
+                android:id="@+id/DayEight"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="25 minute easy run and 3 builder strides" />
+        </TableRow>
+        <!-- Day Nine -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Tuesday" />
+
+            <CheckBox
+                android:id="@+id/DayNine"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="15 minute tempo, (5 minute rest), 4x300m at mile pace (2 minute rest)" />
+        </TableRow>
+        <!-- Day Ten -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Wednesday"/>
+            <CheckBox
+                android:id="@+id/DayTen"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="25 minute easy run and 3 builder strides" />
+        </TableRow>
+        <!-- Day Eleven -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Thursday" />
+            <CheckBox
+                android:id="@+id/DayEleven"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="1 mile tempo, (5 minute rest), 6x400m hills (90-120 second rest)" />
+        </TableRow>
+        <!-- Day Twelve -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Friday" />
+            <CheckBox
+                android:id="@+id/DayTwelve"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="25 minute easy run or 35 minute cross-training" />
+        </TableRow>
+        <!-- Day Thirteen -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Saturday" />
+            <CheckBox
+                android:id="@+id/DayThirteen"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="35-40 minute long run" />
+        </TableRow>
+        <!-- Day Fourteen -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Sunday" />
+            <CheckBox
+                android:id="@+id/DayFourteen"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Off Day or 30 Minute cross-train" />
+        </TableRow>
+        <!-- Week Three: -->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:background="#27B3B2B2"
+            android:text="Week Three:"
+            android:textSize="18sp" />
+        <!-- Day Fifteen -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Monday" />
+
+            <CheckBox
+                android:id="@+id/DayFifteen"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="30 minute easy run and 4 builder strides" />
+        </TableRow>
+        <!-- Day Sixteen -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Tuesday" />
+
+            <CheckBox
+                android:id="@+id/DaySixteen"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="8x400m at mile pace (2 minute rest), (3 minute rest), 4x200m at mile pace (90 seconds rest)" />
+        </TableRow>
+        <!-- Day Seventeen -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Wednesday"/>
+            <CheckBox
+                android:id="@+id/DaySeventeen"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="30 minute easy run and 4 builder strides" />
+        </TableRow>
+        <!-- Day Eighteen -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Thursday" />
+            <CheckBox
+                android:id="@+id/Eighteen"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="1.5 mile tempo (5 minute rest), 3x600m at mile Pace (3 minute rest), (3 minute rest), 2x200m at mile pace (3 minute rest)" />
+        </TableRow>
+        <!-- Day Nineteen -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Friday" />
+            <CheckBox
+                android:id="@+id/DayNineteen"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="30 minute easy run or 40 minute cross-training" />
+        </TableRow>
+        <!-- Day Twenty -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Saturday" />
+            <CheckBox
+                android:id="@+id/DayTwenty"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="50 minute long run" />
+        </TableRow>
+        <!-- Day Twenty-One -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Sunday" />
+            <CheckBox
+                android:id="@+id/DayTwentyOne"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Off Day or 30 Minute cross-train" />
+        </TableRow>
+        <!-- Week Four: -->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:background="#27B3B2B2"
+            android:text="Week Four:"
+            android:textSize="18sp" />
+        <!-- Day Twenty-Two -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Monday" />
+
+            <CheckBox
+                android:id="@+id/DayTwentyTwo"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="35 minute easy run and 4 builder strides" />
+        </TableRow>
+        <!-- Day Twenty-Three -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Tuesday" />
+
+            <CheckBox
+                android:id="@+id/DayTwentyThree"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="15 minute tempo, (5 minute rest), 8x200m at mile pace (90 second rest)" />
+        </TableRow>
+        <!-- Day Twenty-Four -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Wednesday"/>
+            <CheckBox
+                android:id="@+id/DayTwentyFour"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="35 minute easy run and 4 builder strides" />
+        </TableRow>
+        <!-- Day Twenty-Five -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Thursday" />
+            <CheckBox
+                android:id="@+id/DayTwentyFive"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="2 x 1 mile at 3K pace (4 minute rest), (5 minute rest), 4x800m at 3k pace (3 minute rest)" />
+        </TableRow>
+        <!-- Day Twenty-Six -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Friday" />
+            <CheckBox
+                android:id="@+id/DayTwentySix"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="35 minute easy run or 45 minute cross-training" />
+        </TableRow>
+        <!-- Day Twenty-Seven -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Saturday" />
+            <CheckBox
+                android:id="@+id/DayTwentySeven"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="60 minute long run (middle 20 minutes at 10k pace)" />
+        </TableRow>
+        <!-- Day Twenty-Eight -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Sunday" />
+            <CheckBox
+                android:id="@+id/DayTwentyEight"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Off Day or 30 Minute cross-train" />
+        </TableRow>
+        <!-- Week Five: -->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:background="#27B3B2B2"
+            android:text="Week Five:"
+            android:textSize="18sp" />
+        <!-- Day Twenty-Nine -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Monday"/>
+
+            <CheckBox
+                android:id="@+id/DayTwentyNine"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="40 minute easy run and 4 builder strides" />
+        </TableRow>
+        <!-- Day Thirty -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Tuesday" />
+
+            <CheckBox
+                android:id="@+id/DayThirty"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="8x400m hills (90-120 second rest), (4 minute rest), 6x400 at mile pace (2:30 minute rest)" />
+        </TableRow>
+        <!-- Day Thirty-One -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Wednesday"/>
+            <CheckBox
+                android:id="@+id/DayThirtyOne"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="40 minute easy run and 4 builder strides" />
+        </TableRow>
+        <!-- Day Thirty-Two -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Thursday" />
+            <CheckBox
+                android:id="@+id/DayThirtyTwo"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="2 x 1 mile at 3K pace (4 minute rest), (7 minute rest), 3X600m at 3k pace (3 minute rest), (5 minute rest), 3X300m at mile pace (3 minute rest)" />
+        </TableRow>
+        <!-- Day Thirty-Three -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Friday" />
+            <CheckBox
+                android:id="@+id/DayThirtyThree"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="40 minute easy run or 45 minute cross-training" />
+        </TableRow>
+        <!-- Day Thirty-Four -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Saturday" />
+            <CheckBox
+                android:id="@+id/DayThirtyFour"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="65 minute long run" />
+        </TableRow>
+        <!-- Day Thirty-Five -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Sunday" />
+            <CheckBox
+                android:id="@+id/DayThirtyFive"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Off Day or 30 Minute cross-train" />
+        </TableRow>
+        <!-- Week Six: -->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:background="#27B3B2B2"
+            android:text="Week Six:"
+            android:textSize="18sp" />
+        <!-- Day Thirty-Six -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Monday"/>
+
+            <CheckBox
+                android:id="@+id/DayThirtySix"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="40 minute easy run and 4 builder strides" />
+        </TableRow>
+        <!-- Day Thirty-Seven -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Tuesday" />
+
+            <CheckBox
+                android:id="@+id/DayThirtySeven"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="8x400 at mile pace (90 second rest), (5 minute rest), 4x200m at mile pace (3 minute rest)  " />
+        </TableRow>
+        <!-- Day Thirty-Eight -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Wednesday"/>
+            <CheckBox
+                android:id="@+id/DayThirtyEight"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="30 minute easy run and 4 builder strides" />
+        </TableRow>
+        <!-- Day Thirty-Nine -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Thursday" />
+            <CheckBox
+                android:id="@+id/DayThirtyNine"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="4x400m at mile pace (3 minute rest), (5 minute rest), 4x200m at mile pace (3 minute rest)" />
+        </TableRow>
+        <!-- Day Forty -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Friday" />
+            <CheckBox
+                android:id="@+id/DayForty"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="30 minute easy run or 45 minute cross-training" />
+        </TableRow>
+        <!-- Day Forty-One -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Saturday" />
+            <CheckBox
+                android:id="@+id/DayFortyOne"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="15 minute easy run" />
+        </TableRow>
+        <!-- Day Forty-Two -->
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#B7F7BA"
+                android:padding="6dip"
+                android:text="Sunday" />
+            <CheckBox
+                android:id="@+id/DayFortyTwo"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Race Day!" />
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+</ScrollView>
+
